@@ -96,3 +96,17 @@ body {
   overflow-y: scroll;
   grid-column: 2;
 }
+
+.grid-section .animals-list::-webkit-scrollbar {
+  width: 18px;
+}
+
+.grid-section .animals-list::-webkit-scrollbar-thumb {
+  background: #fb5;
+  border-left: 4px solid #faf6ed;
+  border-right: 4px solid #faf6ed;
+}
+
+.grid-section .animals-list::-webkit-scrollbar-track {
+  background:#faf6ed;
+}
