@@ -222,6 +222,31 @@ body {
   animation: show 0.5s forwards;
 }
 
+.js-accordion dt {
+  cursor: pointer;
+}
+
+.js-accordion dt::after {
+  content: '⮧';
+  margin-left: 5px;
+  cursor: pointer;
+}
+
+.js-accordion dt.active::after {
+  content: '⮤';
+  cursor: pointer;
+}
+
+
+.js .js-accordion dd {
+  display: none;
+}
+
+.js-accordion dd.active {
+  display: block;
+  animation: slidedown 1s forwards
+}
+
 @keyframes show {
   from {
     opacity: 0;
@@ -232,3 +257,17 @@ body {
     transform: translate3d(0, 0, 0);
   }
 }
+
+@keyframes slidedown {
+  from {
+    opacity: 0;
+    max-height: 0;
+  }
+
+  to {
+    opacity: 1;
+    max-height: 200px;
+  }
+} 
+
+
