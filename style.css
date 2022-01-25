@@ -229,14 +229,11 @@ body {
 .js-accordion dt::after {
   content: '⮧';
   margin-left: 5px;
-  cursor: pointer;
 }
 
 .js-accordion dt.active::after {
   content: '⮤';
-  cursor: pointer;
 }
-
 
 .js .js-accordion dd {
   display: none;
@@ -245,6 +242,17 @@ body {
 .js-accordion dd.active {
   display: block;
   animation: slidedown 1s forwards
+}
+
+.js .js-scroll {
+  opacity: 0;
+  transform: translate3d(-30px, 0, 0);
+}
+
+.js .js-scroll.active {
+  opacity: 1;
+  transform: translate3d(0, 0, 0);
+  transition: 0.3s;
 }
 
 @keyframes show {
