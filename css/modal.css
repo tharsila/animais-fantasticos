@@ -11,11 +11,11 @@
   align-items: center;
 }
 
-.modal-container.ativo {
+.modal-container.active {
   display: flex;
 }
 
-.modal-container.ativo .modal {
+.modal-container.active .modal {
   animation: modal 0.3s forwards;
 }
 
@@ -81,5 +81,6 @@
   font-size: 1rem;
   font-weight: bold;
   margin-top: 1rem;
+  cursor: pointer;
 }
 
