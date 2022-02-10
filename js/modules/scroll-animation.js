@@ -13,7 +13,8 @@ export default function initScrollAnimation () {
     
         if(visibility < 0) {
           section.classList.add('active')
-        } else {
+
+        } else if (section.classList.contains('active')){
           section.classList.remove('active')
         } 
         
