@@ -1,0 +1,26 @@
+.number-grid {
+  display: grid;
+  grid-column: 2 / 4;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+}
+
+.number-grid .number-animal h3 {
+  font-family: 'Playfair Display', serif;
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+.number-grid .number-animal span {
+  font-family: 'Poppins', sans-serif;
+  font-weight: bold;
+  font-size: 1.5rem;
+  color: #e54;
+  
+}
+
+@media(max-width: 700px) {
+  .number-grid {
+    grid-column: 2;
+  }
+}
