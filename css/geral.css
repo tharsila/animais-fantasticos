@@ -170,6 +170,21 @@ body {
   background:#fb5;
 }
 
+[data-week]::after {
+  display: inline-block;
+  content:"";
+  background: #e54;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  border: 2px solid #000;
+  margin-left: 5px;
+}
+
+[data-week].open::after {
+  background: #3f4;
+}
+
 .copy {
   grid-column: 3 / 5;
   margin-bottom: 2rem;
