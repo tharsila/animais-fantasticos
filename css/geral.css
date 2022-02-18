@@ -314,3 +314,10 @@ body {
     max-height: 200px;
   }
 } 
+
+.btc-preco {
+  background: #3f4;
+  border-radius: 2px;
+  font-weight: bold;
+  padding: 0.2rem 0.5rem;
+}
