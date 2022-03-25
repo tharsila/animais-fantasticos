@@ -221,7 +221,9 @@ body {
     grid-column: 1;
   }
 
-  .faq-list, .data, .map {
+  .grid-section .faq-list, 
+  .grid-section .data, 
+  .grid-section .map {
     grid-column: 1 / 3;
   }
 
